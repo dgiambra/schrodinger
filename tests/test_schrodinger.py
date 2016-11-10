@@ -16,6 +16,7 @@ from click.testing import CliRunner
 
 from schrodinger import schrodinger
 from schrodinger import cli
+import numpy as np
 
 
 
@@ -30,11 +31,5 @@ class TestSchrodinger(unittest.TestCase):
     def test_000_something(self):
         pass
 
-    def test_command_line_interface(self):
-        runner = CliRunner()
-        result = runner.invoke(cli.main)
-        assert result.exit_code == 0
-        assert 'schrodinger.cli.main' in result.output
-        help_result = runner.invoke(cli.main, ['--help'])
-        assert help_result.exit_code == 0
-        assert '--help  Show this message and exit.' in help_result.output
+    def test_different_series(self):
+        self.assertTrue(schrodinger(1,1,5,np.sin,'l',-1,1)!=schrodinger(1,1,5,np.sin,'f',-1,1))
