@@ -10,7 +10,7 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'Click>=6.0', 'numpy'
+    'Click>=6.0',
         # TODO: put package requirements here
 ]
 
@@ -38,7 +38,7 @@ setup(
         ]
     },
     include_package_data=True,
-    
+
     install_requires=requirements,
     license="MIT license",
     zip_safe=False,
