@@ -32,4 +32,4 @@ class TestSchrodinger(unittest.TestCase):
         pass
 
     def test_different_series(self):
-        self.assertTrue(schrodinger.schrodinger(1,1,5,np.sin,'l',-1,1)!=(1,1))
+        self.assertTrue(schrodinger.schrodinger(1,1,5,np.sin,-1,1)!=(1,1))
