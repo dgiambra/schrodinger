@@ -28,7 +28,8 @@ A program to solve Schrodinger's equation.
 Features
 --------
 
-* TODO
+* A program to solve Schrodingers wave equation using Fourier functions.
+* To call, schrodinger(V_0, n_basis_set, c , d_0, d_1)
 
 Credits
 ---------
